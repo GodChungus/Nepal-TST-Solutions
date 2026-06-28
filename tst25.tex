@@ -130,12 +130,25 @@
 \end{problem}
 
 \begin{remark}
-    In my opinion, the absolute easiest problem of the six. This problem is easily solved using induction, as we will see below. I've also heard
-    /seen about solutions using calculus, but I think most of them are inductive too, so it seems induction is the way to go for this problem.
+    In my opinion, this is the absolute easiest problem of the six. This problem is easily solved using induction, as we will see below. 
+    I've also heard/seen about solutions using calculus, but I think most of them are inductive too, so it seems induction is the way to 
+    go for this problem.
 \end{remark}
 
 \begin{proof}
+    Note that for all $k$, $a_{k+1} > a_k$. We proceed via induction.
 
+    The base case $n=2$ is obvious as $a_2^{2025} = 2^{2025} > 2^{2024}$ holds. 
+    Assume now, for some $k$ that $a_k^{2025} > n^{2024}$. It suffices to show that $a_{k+1}^{2025} > n^{2024}$ or equivalently,
+    $a_{k+1}^{\frac{2025}{2024}} > k+1$. This is easy, however, as:
+    \begin{align*}
+        a_{k+1}^{\frac{2025}{2024}} &= a_{k+1} \cdot a_{k+1}^{\frac{1}{2024}} \\
+        &> a_{k+1} \cdot a_k^{\frac{1}{2024}} \\
+        &= \left( a_k + \frac{1}{a_k^{\frac{1}{2024}}} \right) a_k^{\frac{1}{2024}} \\
+        &= a_k^{\frac{2025}{2024}} + 1 \\
+        &> k+1
+    \end{align*}
+    And we're done.
 \end{proof}
 
 \begin{problem}
