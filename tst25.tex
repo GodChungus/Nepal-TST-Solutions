@@ -85,11 +85,25 @@
 
 \begin{proof}
     Denote by $O$ the circumcenter of $\triangle ABC$. We show that $PQ$ always lies on the line $AO$, equivalent to showing
-    $A-O-P$ and $A-O-Q$. Let $D$ be the point on $AC$ such that $XD \perp AC$. Then,
-    \[
-    \angle BAO = \frac{180^\circ - \angle AOB}{2} = 90^\circ - \angle ACB = \angle CXD = \angle BAQ
-    \]
-    So we have $A-O-Q$. Similarly.
+    $A-O-P$ and $A-O-Q$. Let $D$ be the point on $AC$ such that $XD \perp AC$.
+    \begin{claim}
+        We have $A-O-Q$.
+        \begin{proof}
+            \[
+            \angle BAO = \frac{180^\circ - \angle AOB}{2} = 90^\circ - \angle ACB = \angle CXD = \angle BAQ
+            \]
+        \end{proof}
+    \end{claim}
+
+    \begin{claim}
+        We have $A-O-P$.
+        \begin{proof}
+            \[
+            \angle CAP = \angle CXP = 90^\circ + \angle CBA = \angle CAO
+            \]
+        \end{proof}
+    \end{claim}
+    Therefore, $P$ and $Q$ lie on $AO$, we're done.
 \end{proof}
 
 \begin{problem}
