@@ -130,7 +130,18 @@
 \end{problem}
 
 \begin{proof}
-
+    Let $P(x, y)$ be the given assertion.
+    We claim that the only solutions for $f$ are $f(x) = 1$ and $f(x) = \frac cx$ for some constant c. These work upon checking.
+    
+    When $f$ is constant, we get $f(x) = 1$, so from henceforth assume that $f$ is not constant.
+    \[
+    P(1, x) \Longrightarrow f(f(1)) + f(x) = 1 + f(x) \implies f(f(1)) = 1
+    \]
+    \[
+    P(x, f(x)) \Longrightarrow f(f(x)) + xf(xf(x)) = x + f(f(x)) \implies f(xf(x)) = 1
+    \]
+    Therefore, if $f$ was injective, we would have $xf(x) = f(1)$ and we would be done. So, we prove
+    the following claim.
 \end{proof}
 
 \newpage
