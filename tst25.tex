@@ -5,7 +5,7 @@
 \begin{document}
 \title{Nepal TST 2025 Solutions}
 \author{Prakrit Gajurel}
-\date{30 June 2026}
+\date{1 July 2026}
 \maketitle
 
 \section{Day 1 Problems}
@@ -142,6 +142,23 @@
     \]
     Therefore, if $f$ was injective, we would have $xf(x) = f(1)$ and we would be done. So, we prove
     the following claim.
+    \begin{claim}
+        $f$ is injective.
+        \begin{proof}
+            Assume that $f(a) = f(b)$ for some $a$, $b \in \mathbb{R}^+$. We note:
+            \[
+            P(x, a) - P(x, b) \implies f(ax) = f(bx)
+            \]
+            \[
+            P(a, x) \Longrightarrow f(f(a)) + af(ax) = a + f(x)
+            \]
+            \[
+            P(b, x) \Longrightarrow f(f(b)) + bf(bx) = b + f(x)
+            \]
+            Combining gives us $a(1-f(ax)) = b(1-f(bx))$, and since $f$ isn't constant, we can conclude $a=b$.
+        \end{proof}
+    \end{claim}
+    And we're done, as from $P(x, f(x))$ as seen above we get $xf(x) = f(1) \implies f(x) = \frac cx$, setting $c = f(1)$.
 \end{proof}
 
 \newpage
