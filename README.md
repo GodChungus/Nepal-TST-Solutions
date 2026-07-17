@@ -16,7 +16,7 @@ source file is available.
 - 📄 Every solution is written in **LaTeX**.
 - 📕 A compiled **PDF** is available with each source file.
 - 🗂️ Problems are organized by **year**.
-- 🔄 The repository will be updated as I write up more of the problems.
+- 🔄 The repository will be updated as I write up and solve more of the problems.
 
 ---
 
